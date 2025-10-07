@@ -16,6 +16,7 @@ body {
     border-radius: 20px;
     width: 90%;
     max-width: 350px;
+    min-width: 180px;
     max-height: 600px;
     box-shadow: 0px 2px 2px 3px rgba(0, 0, 0, 0.2);
 
@@ -87,8 +88,8 @@ label[for="remember"], .forgot {
     padding: 5%;
     color: white;
     font-size: medium;
-    margin-top: 50px;
-    margin-bottom: 20px;
+    margin-top: 2.5em;
+    margin-bottom: 1em;
     box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.5);
     transition: background-color 1s ease, box-shadow 1s ease;
 }
