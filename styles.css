@@ -1,10 +1,10 @@
 body {
     background-image: url(assets/background.jpg);
     background-size: cover;
+    font-size: medium;
     display: flex;
     justify-content: center;
     align-items: center;
-    line-height: 1.6;
     min-height: 100vh;
     font-family: "Michroma", sans-serif;
     /* font-family: "Anta", sans-serif; */
@@ -16,7 +16,7 @@ body {
     border-radius: 20px;
     width: 90%;
     max-width: 350px;
-    padding: 10px;
+    max-height: 600px;
     box-shadow: 0px 2px 2px 3px rgba(0, 0, 0, 0.2);
 
     display: flex;
@@ -26,11 +26,12 @@ body {
 }
 
 .login-header {
-    font-size: 32px;
+    font-size: 2em;
     font-weight: bold;
     /* color: black; */
+    text-shadow: 1px 3px 3px rgb(133, 52, 52, 0.5);
     letter-spacing: 8px;
-    padding: 10%;
+    padding: 0.4em;
 }
 
 .account {
@@ -42,13 +43,13 @@ body {
 
 .username, .password {
     border: 1px solid rgb(0, 0, 126, 0.5);
-    padding: 3%;
+    padding: 3.5%;
     border-radius: 20px;
     font-size: smaller; 
 }
 
 .username, .password, .login-button {
-    margin: 8px;
+    margin: 7px;
     margin-left: 10%;
     margin-right: 10%;
     outline: none;
@@ -69,15 +70,19 @@ label[for="remember"], .forgot {
     color: rgb(0, 0, 126);
 }
 
+.forgot {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
 .forgot:hover {
     transform: scale(1.1);
-    color:red;
+    color:darkred;
 }
 
 .login-button {
     text-align: center;
     font-weight: bold;
-    background-color: black;
+    background-color: rgb(0, 0, 126);
     border: none;
     border-radius: 30px;
     padding: 5%;
@@ -90,7 +95,7 @@ label[for="remember"], .forgot {
 }
 
 .login-button:hover {
-    background-color:rgb(0, 0, 126);
+    background-color: darkred;
     box-shadow: 0px 4px 6px 4px rgb(0, 0, 0, 0.5);
 }
 
@@ -105,19 +110,20 @@ label[for="remember"], .forgot {
     justify-content: space-evenly;
     align-items: baseline;
     width: 90%;
-    padding: 10%;
+    padding-top: 5%;
+    padding-bottom: 10%;
 }
 
 .icons {
     /* border: 1px solid black; */
     text-align: center;
     font-size: 25px;
-    transition: transform 0.3s ease, color 0.3s;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .icons:hover {
     transform: scale(1.5);
-    color:red;
+    color:darkred;
 }
 
 a, a:visited, a:active {
